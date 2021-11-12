@@ -46,7 +46,7 @@
                      {{-- <img src="{{ productImage($product->image) }}" alt="product">  --}}
                      <img src="/img/macbook-pro.png" alt="product">
 
-                </div> 
+                </div>
 
                  @if ($product->images)
                     @foreach (json_decode($product->images, true) as $image)
@@ -54,10 +54,10 @@
                         <img src="{{ productImage($image) }}" alt="product">
                     </div>
                     @endforeach
-                @endif  
+                @endif
 
 
-             </div> 
+             </div>
         </div>
         <div class="product-section-information">
             <h1 class="product-section-title">{{ $product->name }}</h1>

@@ -70,7 +70,7 @@
                                 @endfor
                             </select>
                         </div>
-                        <div>{{ $item->model->presentPrice() }}</div>
+                        <div>{{ presentPrice($item->subtotal) }}</div>
                     </div>
                 </div> <!-- end cart-table-row -->
                 @endforeach

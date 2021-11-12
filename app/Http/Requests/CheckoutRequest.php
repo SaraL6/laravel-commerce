@@ -13,7 +13,7 @@ class CheckoutRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class CheckoutRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'require|email',
+            'email' => 'required|email',
             'name' => 'required',
             'address' => 'required',
             'city' => 'required',
